@@ -1,0 +1,1082 @@
+@prefix : <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#> .
+
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom> rdf:type owl:Ontology ;
+                                                                       <http://purl.org/dc/terms/license> "http://purl.org/NET/rdflicense/cc-by4.0" ;
+                                                                       rdfs:comment "Ontology about the TV Show \"The Last Kingdom\" created by Eduardo Ruiz Avia" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty .
+
+
+###  http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled
+<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2000/01/rdf-schema#sameAs
+rdfs:sameAs rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#ancestor_of
+:ancestor_of rdf:type owl:ObjectProperty ;
+             owl:inverseOf :has_ancestor ;
+             rdfs:domain :Person ;
+             rdfs:range :Person ;
+             rdfs:comment "Person whose instance is ancestor" ;
+             rdfs:label "ancestor_of" .
+
+
+###  http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#belongs_to
+:belongs_to rdf:type owl:ObjectProperty ;
+            owl:inverseOf :has_owner ;
+            rdf:type owl:FunctionalProperty ;
+            rdfs:domain :Location ;
+            rdfs:range :Faction ;
+            rdfs:label "Faction owner of the location" ,
+                       "belongs_to" .
+
+
+###  http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_ancestor
+:has_ancestor rdf:type owl:ObjectProperty ;
+              rdfs:domain :Person ;
+              rdfs:range :Person ;
+              rdfs:comment "Person who is ancestor of the instance" ;
+              rdfs:label "has_ancestor" .
+
+
+###  http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_beenSieged
+:has_beenSieged rdf:type owl:ObjectProperty ;
+                owl:inverseOf :sieged_in ;
+                rdf:type owl:FunctionalProperty ;
+                rdfs:domain :Siege ;
+                rdfs:range :Fortress ;
+                rdfs:comment "Fortress that has been sieged" ;
+                rdfs:label "has_beenSieged" .
+
+
+###  http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_foughtWith
+:has_foughtWith rdf:type owl:ObjectProperty ,
+                         owl:SymmetricProperty ;
+                rdfs:domain :Faction ;
+                rdfs:range :Faction ;
+                rdfs:comment "Factions that fought for or againts the actual faction" ;
+                rdfs:label "has_foughtWith" .
+
+
+###  http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_frontier
+:has_frontier rdf:type owl:ObjectProperty ,
+                       owl:SymmetricProperty ;
+              rdfs:domain :Faction ;
+              rdfs:range :Faction ;
+              rdfs:comment "Factions that border the current" ;
+              rdfs:label "has_frontier" .
+
+
+###  http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_king
+:has_king rdf:type owl:ObjectProperty ;
+          owl:inverseOf :king_of ;
+          rdf:type owl:FunctionalProperty ;
+          rdfs:domain :Faction ;
+          rdfs:range :King ;
+          rdfs:comment "KIng that rules the faction" ;
+          rdfs:label "has_king" .
+
+
+###  http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_lootedBy
+:has_lootedBy rdf:type owl:ObjectProperty ;
+              owl:inverseOf :looter_of ;
+              rdfs:domain :Raid ;
+              rdfs:range :Faction ;
+              rdfs:comment "Faction that was looter in the raid" ;
+              rdfs:label "has_lootedBy" .
+
+
+###  http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_member
+:has_member rdf:type owl:ObjectProperty ;
+            owl:inverseOf :member_of ;
+            rdfs:domain :Faction ;
+            rdfs:range :Person ;
+            rdfs:comment "People who are members of the faction" ;
+            rdfs:label "has_member" .
+
+
+###  http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_owner
+:has_owner rdf:type owl:ObjectProperty ;
+           rdfs:domain :Faction ;
+           rdfs:range :Location ;
+           rdfs:label "Location owned by the faction" ,
+                      "has_owner" .
+
+
+###  http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_participant
+:has_participant rdf:type owl:ObjectProperty ;
+                 owl:inverseOf :participant_of ;
+                 rdfs:domain :Battle ;
+                 rdfs:range :Faction ;
+                 rdfs:label "Faction that participated in the battle" ,
+                            "has_participant" .
+
+
+###  http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_preferedWeapon
+:has_preferedWeapon rdf:type owl:ObjectProperty ;
+                    owl:inverseOf :preferedWeapon_of ;
+                    rdfs:domain [ rdf:type owl:Class ;
+                                  owl:unionOf ( :Noble
+                                                :Warrior
+                                              )
+                                ] ;
+                    rdfs:range :Weapon ;
+                    rdfs:comment "Weapon prefered by nobles" ;
+                    rdfs:label "has_preferedWeapon" .
+
+
+###  http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_religion
+:has_religion rdf:type owl:ObjectProperty ;
+              owl:inverseOf :religion_of ;
+              rdf:type owl:FunctionalProperty ;
+              rdfs:domain :Faction ;
+              rdfs:range :Religion ;
+              rdfs:comment "Religion of the faction" ;
+              rdfs:label "has_religion" .
+
+
+###  http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_signatory
+:has_signatory rdf:type owl:ObjectProperty ;
+               owl:inverseOf :signatory_of ;
+               rdfs:domain :PeaceTreaty ;
+               rdfs:range :Faction ;
+               rdfs:comment "Faction that signed the peace treaty" ;
+               rdfs:label "has_signatory" .
+
+
+###  http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_victim
+:has_victim rdf:type owl:ObjectProperty ;
+            owl:inverseOf :victim_of ;
+            rdfs:domain :Raid ;
+            rdfs:range :Faction ;
+            rdfs:comment "Faction that was looted in the raid" ;
+            rdfs:label "has_victim" .
+
+
+###  http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_weapon
+:has_weapon rdf:type owl:ObjectProperty ;
+            owl:inverseOf :weapon_of ;
+            rdfs:domain :Vassal ;
+            rdfs:range :CheapWeapon ;
+            rdfs:comment "Weapon used by vassals (the cheap ones)" ;
+            rdfs:label "has_weapon" .
+
+
+###  http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#king_of
+:king_of rdf:type owl:ObjectProperty ;
+         rdfs:domain :King ;
+         rdfs:range :Faction ;
+         rdfs:comment "Faction ruled by the king" ;
+         rdfs:label "king_of" .
+
+
+###  http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#looter_of
+:looter_of rdf:type owl:ObjectProperty ;
+           rdfs:domain :Faction ;
+           rdfs:range :Raid ;
+           rdfs:comment "Raid that was carried out by the faction" ;
+           rdfs:label "looter_of" .
+
+
+###  http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#member_of
+:member_of rdf:type owl:ObjectProperty ,
+                    owl:FunctionalProperty ;
+           rdfs:domain :Person ;
+           rdfs:range :Faction ;
+           rdfs:comment "Faction the person is a member of" ;
+           rdfs:label "member_of" .
+
+
+###  http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#participant_of
+:participant_of rdf:type owl:ObjectProperty ;
+                rdfs:domain :Faction ;
+                rdfs:range :Battle ;
+                rdfs:label "Battle in which the faction participated" ,
+                           "participant_of" .
+
+
+###  http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#preferedWeapon_of
+:preferedWeapon_of rdf:type owl:ObjectProperty ;
+                   rdfs:domain :Weapon ;
+                   rdfs:range [ rdf:type owl:Class ;
+                                owl:unionOf ( :Noble
+                                              :Warrior
+                                            )
+                              ] ;
+                   rdfs:comment "Person whose instance is a prefered weapon" ;
+                   rdfs:label "preferedWeapon_of" .
+
+
+###  http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#religion_of
+:religion_of rdf:type owl:ObjectProperty ;
+             rdfs:domain :Religion ;
+             rdfs:range :Faction ;
+             rdfs:comment "Faction that believes in this religion" ;
+             rdfs:label "religion_of" .
+
+
+###  http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#sieged_in
+:sieged_in rdf:type owl:ObjectProperty ;
+           rdfs:domain :Fortress ;
+           rdfs:range :Siege ;
+           rdfs:comment "Siege in wich the fortress was attacked" ;
+           rdfs:label "sieged_in" .
+
+
+###  http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#signatory_of
+:signatory_of rdf:type owl:ObjectProperty ;
+              rdfs:domain :Faction ;
+              rdfs:range :PeaceTreaty ;
+              rdfs:comment "Peace treaty that was signed by the faction" ;
+              rdfs:label "signatory_of" .
+
+
+###  http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#victim_of
+:victim_of rdf:type owl:ObjectProperty ;
+           rdfs:domain :Faction ;
+           rdfs:range :Raid ;
+           rdfs:comment "Raid in which the faction was looted." ;
+           rdfs:label "victim_of" .
+
+
+###  http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#weapon_of
+:weapon_of rdf:type owl:ObjectProperty ;
+           rdfs:domain :CheapWeapon ;
+           rdfs:range :Vassal ;
+           rdfs:comment "Person whose weapon is used" ;
+           rdfs:label "weapon_of" .
+
+
+###  http://www.w3.org/2002/07/owl#differentFrom
+owl:differentFrom rdf:type owl:ObjectProperty .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#age
+:age rdf:type owl:DatatypeProperty ,
+              owl:FunctionalProperty ;
+     rdfs:domain :Person ;
+     rdfs:range xsd:positiveInteger ;
+     rdfs:comment "The age of someone" ;
+     rdfs:label "age" .
+
+
+###  http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#expensive
+:expensive rdf:type owl:DatatypeProperty ,
+                    owl:FunctionalProperty ;
+           rdfs:domain :Weapon ;
+           rdfs:range xsd:boolean ;
+           rdfs:comment "States the relative value of the weapon" ;
+           rdfs:label "expensive" .
+
+
+###  http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#name
+:name rdf:type owl:DatatypeProperty ;
+      rdfs:domain [ rdf:type owl:Class ;
+                    owl:unionOf ( :Event
+                                  :Faction
+                                  :Location
+                                  :Person
+                                  :Religion
+                                  :Weapon
+                                )
+                  ] ;
+      rdfs:range xsd:string ;
+      rdfs:comment "Name of something or someone" ;
+      rdfs:label "name" .
+
+
+###  http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#nickname
+:nickname rdf:type owl:DatatypeProperty ,
+                   owl:FunctionalProperty ;
+          rdfs:domain :Person ;
+          rdfs:range xsd:string ;
+          rdfs:comment "The nickname of someone" ;
+          rdfs:label "nickname" .
+
+
+###  http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#population
+:population rdf:type owl:DatatypeProperty ,
+                     owl:FunctionalProperty ;
+            rdfs:domain :Location ;
+            rdfs:range xsd:positiveInteger ;
+            rdfs:comment "Approximate population of a place" ;
+            rdfs:label "population" .
+
+
+###  http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#year
+:year rdf:type owl:DatatypeProperty ,
+               owl:FunctionalProperty ;
+      rdfs:domain :Event ;
+      rdfs:range xsd:positiveInteger ;
+      rdfs:comment "Year of the event" ;
+      rdfs:label "year" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#AngloDanes
+:AngloDanes rdf:type owl:Class ;
+            rdfs:subClassOf :Faction ;
+            rdfs:comment "Danish factions settled in England" ;
+            rdfs:label "AngloDanes" .
+
+
+###  http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#AngloSaxons
+:AngloSaxons rdf:type owl:Class ;
+             rdfs:subClassOf :Faction ;
+             rdfs:comment "Saxon factions settled in England" ;
+             rdfs:label "AngloSaxons" ;
+             rdfs:sameAs "https://dbpedia.org/page/Anglo-Saxons" .
+
+
+###  http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Battle
+:Battle rdf:type owl:Class ;
+        rdfs:subClassOf :Event ;
+        rdfs:comment "A battle that has occurred in the series" ;
+        rdfs:label "Battle" .
+
+
+###  http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Belligerent
+:Belligerent rdf:type owl:Class ;
+             owl:equivalentClass [ rdf:type owl:Class ;
+                                   owl:unionOf ( [ owl:intersectionOf ( :Faction
+                                                                        [ rdf:type owl:Restriction ;
+                                                                          owl:onProperty :participant_of ;
+                                                                          owl:someValuesFrom :Battle
+                                                                        ]
+                                                                      ) ;
+                                                   rdf:type owl:Class
+                                                 ]
+                                                 [ rdf:type owl:Restriction ;
+                                                   owl:onProperty :looter_of ;
+                                                   owl:someValuesFrom :Raid
+                                                 ]
+                                               )
+                                 ] ;
+             rdfs:subClassOf :Faction ;
+             rdfs:comment "Factions that took part in any battle or raid" ;
+             rdfs:label "Belligerent" .
+
+
+###  http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Britons
+:Britons rdf:type owl:Class ;
+         rdfs:subClassOf :Faction ;
+         rdfs:comment "The Welsh are the descendants of the ancient Britons, pushed west and north of the island by the Saxons in the 5th and 7th centuries." ;
+         rdfs:label "Britons" .
+
+
+###  http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Champion
+:Champion rdf:type owl:Class ;
+          rdfs:subClassOf :Warrior ;
+          rdfs:comment "Specialized warriors who used to be part of the elite forces of the time" ;
+          rdfs:label "Champion" .
+
+
+###  http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#CheapWeapon
+:CheapWeapon rdf:type owl:Class ;
+             owl:equivalentClass [ owl:intersectionOf ( :Weapon
+                                                        [ rdf:type owl:Restriction ;
+                                                          owl:onProperty :expensive ;
+                                                          owl:hasValue "false"^^xsd:boolean
+                                                        ]
+                                                      ) ;
+                                   rdf:type owl:Class
+                                 ] ;
+             rdfs:subClassOf :Weapon ;
+             rdfs:comment "Weapons that are relatively cheap" ;
+             rdfs:label "CheapWeapon" .
+
+
+###  http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#ChristianFaction
+:ChristianFaction rdf:type owl:Class ;
+                  owl:equivalentClass [ owl:intersectionOf ( :Faction
+                                                             [ rdf:type owl:Restriction ;
+                                                               owl:onProperty :has_religion ;
+                                                               owl:someValuesFrom :Christianism
+                                                             ]
+                                                           ) ;
+                                        rdf:type owl:Class
+                                      ] ;
+                  rdfs:comment "Factions whose religion is Christianism" ;
+                  rdfs:label "ChistianFaction" .
+
+
+###  http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Christianism
+:Christianism rdf:type owl:Class ;
+              rdfs:subClassOf :Religion ;
+              owl:disjointWith :Paganism .
+
+
+###  http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#City
+:City rdf:type owl:Class ;
+      rdfs:subClassOf :Location ;
+      rdfs:comment "Population center" ;
+      rdfs:label "City" .
+
+
+###  http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Clergy
+:Clergy rdf:type owl:Class ;
+        rdfs:subClassOf :Vassal ;
+        rdfs:comment "Member of the clergy" ;
+        rdfs:label "Clergy" .
+
+
+###  http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Event
+:Event rdf:type owl:Class ;
+       rdfs:comment "An important event that happened in the series" ;
+       rdfs:label "Event" .
+
+
+###  http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Faction
+:Faction rdf:type owl:Class ;
+         rdfs:comment "One of the factions of the time in the British Isles." ;
+         rdfs:label "Faction" .
+
+
+###  http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Fortress
+:Fortress rdf:type owl:Class ;
+          rdfs:subClassOf :City ;
+          rdfs:comment "Fortified population center" ;
+          rdfs:label "Fortress" .
+
+
+###  http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Irish
+:Irish rdf:type owl:Class ;
+       rdfs:subClassOf :Faction ;
+       rdfs:comment "Christianized people of Ireland" ;
+       rdfs:label "Irish" .
+
+
+###  http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#King
+:King rdf:type owl:Class ;
+      owl:equivalentClass [ rdf:type owl:Restriction ;
+                            owl:onProperty :king_of ;
+                            owl:someValuesFrom :Faction
+                          ] ;
+      rdfs:subClassOf :Witenagemot ;
+      rdfs:comment "The King or the Jarl of the faction" ;
+      rdfs:label "King" .
+
+
+###  http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Location
+:Location rdf:type owl:Class ;
+          rdfs:comment "Any type of location or territory" ;
+          rdfs:label "Location" .
+
+
+###  http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#MeleeWeapon
+:MeleeWeapon rdf:type owl:Class ;
+             rdfs:subClassOf :Weapon ;
+             rdfs:comment "Weapons used in melee or close combat" ;
+             rdfs:label "MeleeWeapon" .
+
+
+###  http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Merchant
+:Merchant rdf:type owl:Class ;
+          rdfs:subClassOf :Vassal ;
+          rdfs:comment "A buyer and seller of commodities for profit" ;
+          rdfs:label "Merchant" .
+
+
+###  http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Noble
+:Noble rdf:type owl:Class ;
+       rdfs:subClassOf :Person ;
+       owl:disjointWith :Vassal ;
+       rdfs:label "Aristocratic people" ,
+                  "Noble" .
+
+
+###  http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#NorseGaels
+:NorseGaels rdf:type owl:Class ;
+            rdfs:subClassOf :Faction ;
+            rdfs:comment "Scandinavian population from Viking raids who settled in Ireland, Scotland, Wales" ;
+            rdfs:label "NorseGaels" .
+
+
+###  http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#OldEnoughToFight
+:OldEnoughToFight rdf:type owl:Class ;
+                  rdfs:subClassOf :Person ;
+                  rdfs:comment "People that are too old to fight" ;
+                  rdfs:label "OldEnoughToFight" .
+
+
+###  http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#OneHanded
+:OneHanded rdf:type owl:Class ;
+           rdfs:subClassOf :MeleeWeapon ;
+           rdfs:comment "Weapons that can be used with one hand" ;
+           rdfs:label "OneHanded" .
+
+
+###  http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#PaganFaction
+:PaganFaction rdf:type owl:Class ;
+              owl:equivalentClass [ owl:intersectionOf ( :Faction
+                                                         [ rdf:type owl:Class ;
+                                                           owl:complementOf :ChristianFaction
+                                                         ]
+                                                       ) ;
+                                    rdf:type owl:Class
+                                  ] ;
+              rdfs:comment "Factions whose religion is not Christianism" ;
+              rdfs:label "PaganFaction" .
+
+
+###  http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Paganism
+:Paganism rdf:type owl:Class ;
+          rdfs:subClassOf :Religion ;
+          rdfs:comment "Any non-Christian religion" ;
+          rdfs:label "Paganism" ;
+          rdfs:sameAs "https://dbpedia.org/page/Paganism" .
+
+
+###  http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#PeaceTreaty
+:PeaceTreaty rdf:type owl:Class ;
+             rdfs:subClassOf :Event ;
+             rdfs:comment "A peace treaty signed by 2 or more factions" ;
+             rdfs:label "PeaceTreaty" .
+
+
+###  http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Peasant
+:Peasant rdf:type owl:Class ;
+         rdfs:subClassOf :Vassal ;
+         rdfs:label "Peasant" ,
+                    "Persons tilling the soil as small landowners or as laborers" .
+
+
+###  http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Person
+:Person rdf:type owl:Class ;
+        rdfs:comment "Any kind of person" ;
+        rdfs:label "Person" .
+
+
+###  http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Raid
+:Raid rdf:type owl:Class ;
+      rdfs:subClassOf :Event ;
+      rdfs:comment "A raid by one or more factions on a territory" ;
+      rdfs:label "Raid" .
+
+
+###  http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#RangeWeapon
+:RangeWeapon rdf:type owl:Class ;
+             rdfs:subClassOf :Weapon ;
+             rdfs:comment "Ranged weapons" ;
+             rdfs:label "RangeWeapon" .
+
+
+###  http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Religion
+:Religion rdf:type owl:Class ;
+          rdfs:comment "Creed or belief" ;
+          rdfs:label "Religion" .
+
+
+###  http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Scots
+:Scots rdf:type owl:Class ;
+       rdfs:subClassOf :Faction ;
+       rdfs:comment "Celtic and Pictish settlers from the northern British Isles" ;
+       rdfs:label "Scots" .
+
+
+###  http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Siege
+:Siege rdf:type owl:Class ;
+       rdfs:subClassOf :Battle ;
+       rdfs:comment "A siege of a fortress that has occurred in the series" ;
+       rdfs:label "Siege" .
+
+
+###  http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#TooOldToFight
+:TooOldToFight rdf:type owl:Class ;
+               rdfs:subClassOf :Person ;
+               rdfs:comment "People that aren't too old to fight" ;
+               rdfs:label "TooOldToFight" .
+
+
+###  http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#TwoHanded
+:TwoHanded rdf:type owl:Class ;
+           rdfs:subClassOf :MeleeWeapon ;
+           rdfs:comment "Weapons that must be used with two hands" ;
+           rdfs:label "TwoHanded" .
+
+
+###  http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Vassal
+:Vassal rdf:type owl:Class ;
+        rdfs:subClassOf :Person ;
+        rdfs:comment "A holder of land by feudal tenure on conditions of homage and allegiance." ;
+        rdfs:label "Vassal" .
+
+
+###  http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Vikings
+:Vikings rdf:type owl:Class ;
+         rdfs:subClassOf :Faction ;
+         rdfs:comment "Peoples from Scandinavia, always willing to raid for slaves, booty and land." ;
+         rdfs:label "Vikings" .
+
+
+###  http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Warrior
+:Warrior rdf:type owl:Class ;
+         rdfs:subClassOf :Vassal ;
+         rdfs:comment "People whose occupation is war or the defense of the territory" ;
+         rdfs:label "Warrior" .
+
+
+###  http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Weapon
+:Weapon rdf:type owl:Class ;
+        rdfs:comment "Any kind of weapon" ;
+        rdfs:label "Weapon" .
+
+
+###  http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Witenagemot
+:Witenagemot rdf:type owl:Class ;
+             rdfs:subClassOf :Noble ;
+             rdfs:comment "Aristocratic people assembly members" ;
+             rdfs:label "Witenagemot" ;
+             rdfs:sameAs "https://dbpedia.org/page/Witenagemot" .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Aeglesburgh
+:Aeglesburgh rdf:type owl:NamedIndividual ,
+                      :Fortress ;
+             :belongs_to :Mercia ;
+             :name "Aeglesburgh" ;
+             :population 800 .
+
+
+###  http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Aethelflaed
+:Aethelflaed rdf:type owl:NamedIndividual ,
+                      :Witenagemot ;
+             :has_ancestor :Alfred ;
+             :member_of :Mercia ;
+             :age 30 ;
+             :name "Aethelflaed" ;
+             rdfs:sameAs "https://dbpedia.org/page/%C3%86thelfl%C3%A6d" .
+
+
+###  http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Aethelhelm
+:Aethelhelm rdf:type owl:NamedIndividual ,
+                     :Witenagemot ;
+            :member_of :Wessex ;
+            :age 60 ;
+            :name "Aethelhelm" .
+
+
+###  http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Aethelred
+:Aethelred rdf:type owl:NamedIndividual ,
+                    :Witenagemot ;
+           :member_of :Mercia ;
+           :age 35 ;
+           :name "Aethelred" .
+
+
+###  http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Alfred
+:Alfred rdf:type owl:NamedIndividual ,
+                 :Witenagemot ;
+        :member_of :Wessex ;
+        :age 55 ;
+        :name "Alfred" ;
+        :nickname "The Great" ;
+        rdfs:sameAs "https://dbpedia.org/page/Alfred_the_Great" .
+
+
+###  http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Battle_Of_Ethandun
+:Battle_Of_Ethandun rdf:type owl:NamedIndividual ,
+                             :Battle ;
+                    :has_participant :Estanglia ,
+                                     :Wessex ;
+                    :name "Battle of Ethandum" ;
+                    :year 878 ;
+                    rdfs:sameAs "https://dbpedia.org/page/Battle_of_Edington" .
+
+
+###  http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Battle_Of_Tettenhall
+:Battle_Of_Tettenhall rdf:type owl:NamedIndividual ;
+                      :has_participant :Estanglia ,
+                                       :Mercia ;
+                      :name "Battle of Tettenhall" ;
+                      :year 871 .
+
+
+###  http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Beocca
+:Beocca rdf:type owl:NamedIndividual ,
+                 :Clergy ;
+        :has_weapon :Club ;
+        :member_of :Wessex ;
+        :age 58 ;
+        :name "Beocca" .
+
+
+###  http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Bow
+:Bow rdf:type owl:NamedIndividual ,
+              :RangeWeapon ;
+     :expensive "false"^^xsd:boolean ;
+     :name "Bow" .
+
+
+###  http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Celtic_Mithology
+:Celtic_Mithology rdf:type owl:NamedIndividual ,
+                           :Paganism ;
+                  :name "Celtic Mithology" .
+
+
+###  http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Christianism
+:Christianism rdf:type owl:NamedIndividual ,
+                       :Christianism ;
+              :name "Chistianism" .
+
+
+###  http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Club
+:Club rdf:type owl:NamedIndividual ,
+               :OneHanded ;
+      :expensive "false"^^xsd:boolean ;
+      :name "Club" .
+
+
+###  http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Cornwall
+:Cornwall rdf:type owl:NamedIndividual ,
+                   :Britons ;
+          :has_religion :Celtic_Mithology ;
+          :name "Cornwall" ;
+          rdfs:sameAs "https://dbpedia.org/page/Cornwall" .
+
+
+###  http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Dagger
+:Dagger rdf:type owl:NamedIndividual ,
+                 :OneHanded ;
+        :expensive "false"^^xsd:boolean ;
+        :name "Dagger" .
+
+
+###  http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Deheubarth
+:Deheubarth rdf:type owl:NamedIndividual ,
+                     :Britons ;
+            :has_king :Hywel ;
+            :has_religion :Christianism ;
+            :name "Deheubarth" .
+
+
+###  http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Dinefwr
+:Dinefwr rdf:type owl:NamedIndividual ,
+                  :Fortress ;
+         :belongs_to :Deheubarth ;
+         :name "Dinefwr" ;
+         :population 600 .
+
+
+###  http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Estanglia
+:Estanglia rdf:type owl:NamedIndividual ,
+                    :AngloDanes ;
+           :has_king :Guthrum ;
+           :has_religion :Nordic_Mithology ;
+           :name "Eastanglia" .
+
+
+###  http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Guthrum
+:Guthrum rdf:type owl:NamedIndividual ,
+                  :Witenagemot ;
+         :member_of :Estanglia ;
+         :age 65 ;
+         :name "Guthrum" ;
+         :nickname "The Old" .
+
+
+###  http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Hywel
+:Hywel rdf:type owl:NamedIndividual ,
+                :Witenagemot ;
+       :member_of :Deheubarth ;
+       :age 70 ;
+       :name "Hywel" ;
+       :nickname "The Good" .
+
+
+###  http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Iseult
+:Iseult rdf:type owl:NamedIndividual ,
+                 :Noble ;
+        :member_of :Cornwall ;
+        :age 30 ;
+        :name "Iseult" .
+
+
+###  http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Mercia
+:Mercia rdf:type owl:NamedIndividual ,
+                 :AngloSaxons ;
+        :has_king :Aethelred ;
+        :has_religion :Christianism ;
+        :name "Mercia" .
+
+
+###  http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Nordic_Mithology
+:Nordic_Mithology rdf:type owl:NamedIndividual ,
+                           :Paganism ;
+                  :name "Nordic Mithology" .
+
+
+###  http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Ragnar
+:Ragnar rdf:type owl:NamedIndividual ,
+                 :Witenagemot ;
+        :member_of :Estanglia ;
+        :age 35 ;
+        :name "Ragnar" .
+
+
+###  http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Raid_Of_Cornwall
+:Raid_Of_Cornwall rdf:type owl:NamedIndividual ,
+                           :Raid ;
+                  :has_lootedBy :Wessex ;
+                  :has_victim :Cornwall ;
+                  :name "Raid of Cornwall" ;
+                  :year 877 .
+
+
+###  http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Raid_Of_Mercia
+:Raid_Of_Mercia rdf:type owl:NamedIndividual ,
+                         :Raid ;
+                :has_lootedBy :Estanglia ;
+                :has_victim :Mercia ;
+                :year 871 .
+
+
+###  http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Siege_Of_Wintanceaster
+:Siege_Of_Wintanceaster rdf:type owl:NamedIndividual ,
+                                 :Siege ;
+                        :has_beenSieged :Aeglesburgh ;
+                        :has_participant :Estanglia ,
+                                         :Wessex ;
+                        :name "Siege of Wintanceaster" ;
+                        :year 892 .
+
+
+###  http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Spear
+:Spear rdf:type owl:NamedIndividual ,
+                :TwoHanded ;
+       :expensive "false"^^xsd:boolean ;
+       :name "Spear" .
+
+
+###  http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Sword
+:Sword rdf:type owl:NamedIndividual ,
+                :OneHanded ;
+       :expensive "true"^^xsd:boolean ;
+       :name "Sword" .
+
+
+###  http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Treaty_of_Alfred_and_Guthrum
+:Treaty_of_Alfred_and_Guthrum rdf:type owl:NamedIndividual ,
+                                       :PeaceTreaty ;
+                              :has_signatory :Estanglia ,
+                                             :Wessex ;
+                              :name "Treaty of Alfred and Guthrum" ;
+                              :year 879 .
+
+
+###  http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Uhtred_of_Bebbanburg
+:Uhtred_of_Bebbanburg rdf:type owl:NamedIndividual ,
+                               :Champion ;
+                      :has_preferedWeapon :Sword ;
+                      :member_of :Wessex ;
+                      :age 35 ;
+                      :name "Uthred of Bebbanburg" ;
+                      :nickname "Killer of danes" .
+
+
+###  http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Wessex
+:Wessex rdf:type owl:NamedIndividual ,
+                 :AngloSaxons ;
+        :has_king :Alfred ;
+        :has_religion :Christianism ;
+        :name "Wessex" ;
+        rdfs:sameAs "https://dbpedia.org/page/Wessex" .
+
+
+###  http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Wintanceaster
+:Wintanceaster rdf:type owl:NamedIndividual ,
+                        :Fortress ;
+               :belongs_to :Wessex ;
+               :name "Wintanceaster" ;
+               :population 1500 .
+
+
+#################################################################
+#    Annotations
+#################################################################
+
+:Christianism rdfs:comment "Creed or belief based on the person and teachings of Jesus Chris" ;
+              rdfs:label "Christianism" .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Battle
+                :PeaceTreaty
+                :Raid
+              )
+] .
+
+
+#################################################################
+#    Rules
+#################################################################
+
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/p> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/a> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+:p rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+:b rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+:q rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "" ;
+   rdfs:label "TooOldToFight" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Person ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/eduardo/ontologies/2022/3/p>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :age ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/eduardo/ontologies/2022/3/p> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/eduardo/ontologies/2022/3/a>
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#greaterThan> ;
+                                                                             <http://www.w3.org/2003/11/swrl#arguments> [ rdf:type rdf:List ;
+                                                                                                                          rdf:first <http://www.semanticweb.org/eduardo/ontologies/2022/3/a> ;
+                                                                                                                          rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                     rdf:first 55 ;
+                                                                                                                                     rdf:rest rdf:nil
+                                                                                                                                   ]
+                                                                                                                        ]
+                                                                           ] ;
+                                                                 rdf:rest rdf:nil
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :TooOldToFight ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/eduardo/ontologies/2022/3/p>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "" ;
+   rdfs:label "OldEnoughToFight" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Person ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/eduardo/ontologies/2022/3/p>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :age ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/eduardo/ontologies/2022/3/p> ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/eduardo/ontologies/2022/3/a>
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#lessThanOrEqual> ;
+                                                                             <http://www.w3.org/2003/11/swrl#arguments> [ rdf:type rdf:List ;
+                                                                                                                          rdf:first <http://www.semanticweb.org/eduardo/ontologies/2022/3/a> ;
+                                                                                                                          rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                     rdf:first 55 ;
+                                                                                                                                     rdf:rest rdf:nil
+                                                                                                                                   ]
+                                                                                                                        ]
+                                                                           ] ;
+                                                                 rdf:rest rdf:nil
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :OldEnoughToFight ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/eduardo/ontologies/2022/3/p>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "" ;
+   rdfs:label "ContendersAndAllies" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Faction ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :p
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#propertyPredicate> :participant_of ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> :p ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument2> :b
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#classPredicate> :Battle ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> :b
+                                                                           ] ;
+                                                                 rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#propertyPredicate> :has_participant ;
+                                                                                        <http://www.w3.org/2003/11/swrl#argument1> :b ;
+                                                                                        <http://www.w3.org/2003/11/swrl#argument2> :q
+                                                                                      ] ;
+                                                                            rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                       rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DifferentIndividualsAtom> ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#argument1> :p ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#argument2> :q
+                                                                                                 ] ;
+                                                                                       rdf:rest rdf:nil
+                                                                                     ]
+                                                                          ]
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :has_foughtWith ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> :p ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> :q
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
