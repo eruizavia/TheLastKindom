@@ -1,0 +1,267 @@
+{
+  "@context" : {
+    "Belligerent" : {
+      "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Belligerent"
+    },
+    "has_foughtWith" : {
+      "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_foughtWith",
+      "@type" : "@id"
+    },
+    "has_lootedBy" : {
+      "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_lootedBy",
+      "@type" : "@id"
+    },
+    "AngloDanes" : {
+      "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#AngloDanes"
+    },
+    "Scots" : {
+      "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Scots"
+    },
+    "has_preferedWeapon" : {
+      "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_preferedWeapon",
+      "@type" : "@id"
+    },
+    "AngloSaxons" : {
+      "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#AngloSaxons"
+    },
+    "license" : {
+      "@id" : "http://purl.org/dc/terms/license"
+    },
+    "Vikings" : {
+      "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Vikings"
+    },
+    "member_of" : {
+      "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#member_of",
+      "@type" : "@id"
+    },
+    "King" : {
+      "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#King"
+    },
+    "Britons" : {
+      "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Britons"
+    },
+    "nickname" : {
+      "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#nickname",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "ancestor_of" : {
+      "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#ancestor_of",
+      "@type" : "@id"
+    },
+    "isRuleEnabled" : {
+      "@id" : "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"
+    },
+    "has_victim" : {
+      "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_victim",
+      "@type" : "@id"
+    },
+    "age" : {
+      "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#age",
+      "@type" : "http://www.w3.org/2001/XMLSchema#positiveInteger"
+    },
+    "Warrior" : {
+      "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Warrior"
+    },
+    "religion_of" : {
+      "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#religion_of",
+      "@type" : "@id"
+    },
+    "king_of" : {
+      "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#king_of",
+      "@type" : "@id"
+    },
+    "has_member" : {
+      "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_member",
+      "@type" : "@id"
+    },
+    "has_frontier" : {
+      "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_frontier",
+      "@type" : "@id"
+    },
+    "Paganism" : {
+      "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Paganism"
+    },
+    "participant_of" : {
+      "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#participant_of",
+      "@type" : "@id"
+    },
+    "has_beenSieged" : {
+      "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_beenSieged",
+      "@type" : "@id"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "preferedWeapon_of" : {
+      "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#preferedWeapon_of",
+      "@type" : "@id"
+    },
+    "OneHanded" : {
+      "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#OneHanded"
+    },
+    "has_signatory" : {
+      "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_signatory",
+      "@type" : "@id"
+    },
+    "Location" : {
+      "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Location"
+    },
+    "Weapon" : {
+      "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Weapon"
+    },
+    "Siege" : {
+      "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Siege"
+    },
+    "PeaceTreaty" : {
+      "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#PeaceTreaty"
+    },
+    "Merchant" : {
+      "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Merchant"
+    },
+    "Event" : {
+      "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Event"
+    },
+    "Faction" : {
+      "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Faction"
+    },
+    "Person" : {
+      "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Person"
+    },
+    "NorseGaels" : {
+      "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#NorseGaels"
+    },
+    "CheapWeapon" : {
+      "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#CheapWeapon"
+    },
+    "Witenagemot" : {
+      "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Witenagemot"
+    },
+    "name" : {
+      "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#name",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "has_religion" : {
+      "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_religion",
+      "@type" : "@id"
+    },
+    "PaganFaction" : {
+      "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#PaganFaction"
+    },
+    "Peasant" : {
+      "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Peasant"
+    },
+    "RangeWeapon" : {
+      "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#RangeWeapon"
+    },
+    "victim_of" : {
+      "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#victim_of",
+      "@type" : "@id"
+    },
+    "sieged_in" : {
+      "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#sieged_in",
+      "@type" : "@id"
+    },
+    "Battle" : {
+      "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Battle"
+    },
+    "Noble" : {
+      "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Noble"
+    },
+    "has_participant" : {
+      "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_participant",
+      "@type" : "@id"
+    },
+    "Irish" : {
+      "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Irish"
+    },
+    "expensive" : {
+      "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#expensive",
+      "@type" : "http://www.w3.org/2001/XMLSchema#boolean"
+    },
+    "population" : {
+      "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#population",
+      "@type" : "http://www.w3.org/2001/XMLSchema#positiveInteger"
+    },
+    "has_owner" : {
+      "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_owner",
+      "@type" : "@id"
+    },
+    "TwoHanded" : {
+      "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#TwoHanded"
+    },
+    "Champion" : {
+      "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Champion"
+    },
+    "Vassal" : {
+      "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Vassal"
+    },
+    "year" : {
+      "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#year",
+      "@type" : "http://www.w3.org/2001/XMLSchema#positiveInteger"
+    },
+    "Religion" : {
+      "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Religion"
+    },
+    "weapon_of" : {
+      "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#weapon_of",
+      "@type" : "@id"
+    },
+    "TooOldToFight" : {
+      "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#TooOldToFight"
+    },
+    "MeleeWeapon" : {
+      "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#MeleeWeapon"
+    },
+    "Fortress" : {
+      "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Fortress"
+    },
+    "looter_of" : {
+      "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#looter_of",
+      "@type" : "@id"
+    },
+    "City" : {
+      "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#City"
+    },
+    "Clergy" : {
+      "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Clergy"
+    },
+    "has_king" : {
+      "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_king",
+      "@type" : "@id"
+    },
+    "sameAs" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#sameAs"
+    },
+    "ChristianFaction" : {
+      "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#ChristianFaction"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "Christianism" : {
+      "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Christianism"
+    },
+    "Raid" : {
+      "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Raid"
+    },
+    "belongs_to" : {
+      "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#belongs_to",
+      "@type" : "@id"
+    },
+    "signatory_of" : {
+      "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#signatory_of",
+      "@type" : "@id"
+    },
+    "OldEnoughToFight" : {
+      "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#OldEnoughToFight"
+    },
+    "has_ancestor" : {
+      "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_ancestor",
+      "@type" : "@id"
+    },
+    "has_weapon" : {
+      "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_weapon",
+      "@type" : "@id"
+    }
+  }
+}
