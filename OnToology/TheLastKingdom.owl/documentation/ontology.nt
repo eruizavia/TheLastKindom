@@ -1,0 +1,1039 @@
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom> <http://purl.org/dc/terms/license> "http://purl.org/NET/rdflicense/cc-by4.0" .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom> <http://www.w3.org/2000/01/rdf-schema#comment> "Ontology about the TV Show \"The Last Kingdom\" created by Eduardo Ruiz Avia" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled
+<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2000/01/rdf-schema#sameAs
+<http://www.w3.org/2000/01/rdf-schema#sameAs> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#ancestor_of
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#ancestor_of> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#ancestor_of> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_ancestor> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#ancestor_of> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Person> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#ancestor_of> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Person> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#ancestor_of> <http://www.w3.org/2000/01/rdf-schema#comment> "Person whose instance is ancestor" .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#ancestor_of> <http://www.w3.org/2000/01/rdf-schema#label> "ancestor_of" .
+# 
+# http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#belongs_to
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#belongs_to> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#belongs_to> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_owner> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#belongs_to> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#belongs_to> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Location> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#belongs_to> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Faction> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#belongs_to> <http://www.w3.org/2000/01/rdf-schema#label> "Faction owner of the location" .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#belongs_to> <http://www.w3.org/2000/01/rdf-schema#label> "belongs_to" .
+# 
+# http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_ancestor
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_ancestor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_ancestor> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Person> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_ancestor> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Person> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_ancestor> <http://www.w3.org/2000/01/rdf-schema#comment> "Person who is ancestor of the instance" .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_ancestor> <http://www.w3.org/2000/01/rdf-schema#label> "has_ancestor" .
+# 
+# http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_beenSieged
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_beenSieged> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_beenSieged> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#sieged_in> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_beenSieged> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_beenSieged> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Siege> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_beenSieged> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Fortress> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_beenSieged> <http://www.w3.org/2000/01/rdf-schema#comment> "Fortress that has been sieged" .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_beenSieged> <http://www.w3.org/2000/01/rdf-schema#label> "has_beenSieged" .
+# 
+# http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_foughtWith
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_foughtWith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_foughtWith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#SymmetricProperty> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_foughtWith> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Faction> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_foughtWith> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Faction> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_foughtWith> <http://www.w3.org/2000/01/rdf-schema#comment> "Factions that fought for or againts the actual faction" .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_foughtWith> <http://www.w3.org/2000/01/rdf-schema#label> "has_foughtWith" .
+# 
+# http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_frontier
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_frontier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_frontier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#SymmetricProperty> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_frontier> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Faction> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_frontier> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Faction> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_frontier> <http://www.w3.org/2000/01/rdf-schema#comment> "Factions that border the current" .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_frontier> <http://www.w3.org/2000/01/rdf-schema#label> "has_frontier" .
+# 
+# http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_king
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_king> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_king> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#king_of> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_king> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_king> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Faction> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_king> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#King> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_king> <http://www.w3.org/2000/01/rdf-schema#comment> "KIng that rules the faction" .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_king> <http://www.w3.org/2000/01/rdf-schema#label> "has_king" .
+# 
+# http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_lootedBy
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_lootedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_lootedBy> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#looter_of> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_lootedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Raid> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_lootedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Faction> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_lootedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "Faction that was looter in the raid" .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_lootedBy> <http://www.w3.org/2000/01/rdf-schema#label> "has_lootedBy" .
+# 
+# http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_member
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_member> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_member> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#member_of> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_member> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Faction> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_member> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Person> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_member> <http://www.w3.org/2000/01/rdf-schema#comment> "People who are members of the faction" .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_member> <http://www.w3.org/2000/01/rdf-schema#label> "has_member" .
+# 
+# http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_owner
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_owner> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_owner> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Faction> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_owner> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Location> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_owner> <http://www.w3.org/2000/01/rdf-schema#label> "Location owned by the faction" .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_owner> <http://www.w3.org/2000/01/rdf-schema#label> "has_owner" .
+# 
+# http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_participant
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_participant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_participant> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#participant_of> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_participant> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Battle> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_participant> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Faction> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_participant> <http://www.w3.org/2000/01/rdf-schema#label> "Faction that participated in the battle" .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_participant> <http://www.w3.org/2000/01/rdf-schema#label> "has_participant" .
+# 
+# http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_preferedWeapon
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_preferedWeapon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_preferedWeapon> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#preferedWeapon_of> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_preferedWeapon> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#unionOf> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Warrior> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Noble> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_preferedWeapon> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Weapon> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_preferedWeapon> <http://www.w3.org/2000/01/rdf-schema#comment> "Weapon prefered by nobles" .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_preferedWeapon> <http://www.w3.org/2000/01/rdf-schema#label> "has_preferedWeapon" .
+# 
+# http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_religion
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_religion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_religion> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#religion_of> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_religion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_religion> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Faction> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_religion> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Religion> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_religion> <http://www.w3.org/2000/01/rdf-schema#comment> "Religion of the faction" .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_religion> <http://www.w3.org/2000/01/rdf-schema#label> "has_religion" .
+# 
+# http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_signatory
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_signatory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_signatory> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#signatory_of> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_signatory> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#PeaceTreaty> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_signatory> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Faction> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_signatory> <http://www.w3.org/2000/01/rdf-schema#comment> "Faction that signed the peace treaty" .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_signatory> <http://www.w3.org/2000/01/rdf-schema#label> "has_signatory" .
+# 
+# http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_victim
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_victim> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_victim> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#victim_of> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_victim> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Raid> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_victim> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Faction> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_victim> <http://www.w3.org/2000/01/rdf-schema#comment> "Faction that was looted in the raid" .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_victim> <http://www.w3.org/2000/01/rdf-schema#label> "has_victim" .
+# 
+# http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_weapon
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_weapon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_weapon> <http://www.w3.org/2002/07/owl#inverseOf> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#weapon_of> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_weapon> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Vassal> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_weapon> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#CheapWeapon> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_weapon> <http://www.w3.org/2000/01/rdf-schema#comment> "Weapon used by vassals (the cheap ones)" .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_weapon> <http://www.w3.org/2000/01/rdf-schema#label> "has_weapon" .
+# 
+# http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#king_of
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#king_of> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#king_of> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#King> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#king_of> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Faction> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#king_of> <http://www.w3.org/2000/01/rdf-schema#comment> "Faction ruled by the king" .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#king_of> <http://www.w3.org/2000/01/rdf-schema#label> "king_of" .
+# 
+# http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#looter_of
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#looter_of> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#looter_of> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Faction> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#looter_of> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Raid> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#looter_of> <http://www.w3.org/2000/01/rdf-schema#comment> "Raid that was carried out by the faction" .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#looter_of> <http://www.w3.org/2000/01/rdf-schema#label> "looter_of" .
+# 
+# http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#member_of
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#member_of> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#member_of> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#member_of> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Person> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#member_of> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Faction> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#member_of> <http://www.w3.org/2000/01/rdf-schema#comment> "Faction the person is a member of" .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#member_of> <http://www.w3.org/2000/01/rdf-schema#label> "member_of" .
+# 
+# http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#participant_of
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#participant_of> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#participant_of> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Faction> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#participant_of> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Battle> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#participant_of> <http://www.w3.org/2000/01/rdf-schema#label> "Battle in which the faction participated" .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#participant_of> <http://www.w3.org/2000/01/rdf-schema#label> "participant_of" .
+# 
+# http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#preferedWeapon_of
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#preferedWeapon_of> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#preferedWeapon_of> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Weapon> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#preferedWeapon_of> <http://www.w3.org/2000/01/rdf-schema#range> _:genid4 .
+_:genid4 <http://www.w3.org/2002/07/owl#unionOf> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Warrior> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Noble> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#preferedWeapon_of> <http://www.w3.org/2000/01/rdf-schema#comment> "Person whose instance is a prefered weapon" .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#preferedWeapon_of> <http://www.w3.org/2000/01/rdf-schema#label> "preferedWeapon_of" .
+# 
+# http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#religion_of
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#religion_of> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#religion_of> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Religion> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#religion_of> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Faction> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#religion_of> <http://www.w3.org/2000/01/rdf-schema#comment> "Faction that believes in this religion" .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#religion_of> <http://www.w3.org/2000/01/rdf-schema#label> "religion_of" .
+# 
+# http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#sieged_in
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#sieged_in> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#sieged_in> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Fortress> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#sieged_in> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Siege> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#sieged_in> <http://www.w3.org/2000/01/rdf-schema#comment> "Siege in wich the fortress was attacked" .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#sieged_in> <http://www.w3.org/2000/01/rdf-schema#label> "sieged_in" .
+# 
+# http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#signatory_of
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#signatory_of> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#signatory_of> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Faction> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#signatory_of> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#PeaceTreaty> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#signatory_of> <http://www.w3.org/2000/01/rdf-schema#comment> "Peace treaty that was signed by the faction" .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#signatory_of> <http://www.w3.org/2000/01/rdf-schema#label> "signatory_of" .
+# 
+# http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#victim_of
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#victim_of> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#victim_of> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Faction> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#victim_of> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Raid> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#victim_of> <http://www.w3.org/2000/01/rdf-schema#comment> "Raid in which the faction was looted." .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#victim_of> <http://www.w3.org/2000/01/rdf-schema#label> "victim_of" .
+# 
+# http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#weapon_of
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#weapon_of> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#weapon_of> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#CheapWeapon> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#weapon_of> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Vassal> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#weapon_of> <http://www.w3.org/2000/01/rdf-schema#comment> "Person whose weapon is used" .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#weapon_of> <http://www.w3.org/2000/01/rdf-schema#label> "weapon_of" .
+# 
+# http://www.w3.org/2002/07/owl#differentFrom
+<http://www.w3.org/2002/07/owl#differentFrom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#age
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#age> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#age> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#age> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Person> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#age> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#positiveInteger> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#age> <http://www.w3.org/2000/01/rdf-schema#comment> "The age of someone" .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#age> <http://www.w3.org/2000/01/rdf-schema#label> "age" .
+# 
+# http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#expensive
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#expensive> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#expensive> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#expensive> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Weapon> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#expensive> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#expensive> <http://www.w3.org/2000/01/rdf-schema#comment> "States the relative value of the weapon" .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#expensive> <http://www.w3.org/2000/01/rdf-schema#label> "expensive" .
+# 
+# http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#name
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#name> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid7 .
+_:genid7 <http://www.w3.org/2002/07/owl#unionOf> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Weapon> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Religion> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Person> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Location> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Faction> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Event> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#name> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#name> <http://www.w3.org/2000/01/rdf-schema#comment> "Name of something or someone" .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#name> <http://www.w3.org/2000/01/rdf-schema#label> "name" .
+# 
+# http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#nickname
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#nickname> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#nickname> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#nickname> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Person> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#nickname> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#nickname> <http://www.w3.org/2000/01/rdf-schema#comment> "The nickname of someone" .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#nickname> <http://www.w3.org/2000/01/rdf-schema#label> "nickname" .
+# 
+# http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#population
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#population> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#population> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#population> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Location> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#population> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#positiveInteger> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#population> <http://www.w3.org/2000/01/rdf-schema#comment> "Approximate population of a place" .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#population> <http://www.w3.org/2000/01/rdf-schema#label> "population" .
+# 
+# http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#year
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#year> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#year> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#year> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Event> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#year> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#positiveInteger> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#year> <http://www.w3.org/2000/01/rdf-schema#comment> "Year of the event" .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#year> <http://www.w3.org/2000/01/rdf-schema#label> "year" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#AngloDanes
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#AngloDanes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#AngloDanes> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Faction> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#AngloDanes> <http://www.w3.org/2000/01/rdf-schema#comment> "Danish factions settled in England" .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#AngloDanes> <http://www.w3.org/2000/01/rdf-schema#label> "AngloDanes" .
+# 
+# http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#AngloSaxons
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#AngloSaxons> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#AngloSaxons> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Faction> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#AngloSaxons> <http://www.w3.org/2000/01/rdf-schema#comment> "Saxon factions settled in England" .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#AngloSaxons> <http://www.w3.org/2000/01/rdf-schema#label> "AngloSaxons" .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#AngloSaxons> <http://www.w3.org/2000/01/rdf-schema#sameAs> "https://dbpedia.org/page/Anglo-Saxons" .
+# 
+# http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Battle
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Battle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Battle> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Event> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Battle> <http://www.w3.org/2000/01/rdf-schema#comment> "A battle that has occurred in the series" .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Battle> <http://www.w3.org/2000/01/rdf-schema#label> "Battle" .
+# 
+# http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Belligerent
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Belligerent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Belligerent> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid14 .
+_:genid14 <http://www.w3.org/2002/07/owl#unionOf> _:genid17 .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid16 .
+_:genid16 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Raid> .
+_:genid16 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#looter_of> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid18 .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid18 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid21 .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid19 .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid20 .
+_:genid20 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Battle> .
+_:genid20 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#participant_of> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Faction> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Belligerent> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Faction> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Belligerent> <http://www.w3.org/2000/01/rdf-schema#comment> "Factions that took part in any battle or raid" .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Belligerent> <http://www.w3.org/2000/01/rdf-schema#label> "Belligerent" .
+# 
+# http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Britons
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Britons> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Britons> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Faction> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Britons> <http://www.w3.org/2000/01/rdf-schema#comment> "The Welsh are the descendants of the ancient Britons, pushed west and north of the island by the Saxons in the 5th and 7th centuries." .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Britons> <http://www.w3.org/2000/01/rdf-schema#label> "Britons" .
+# 
+# http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Champion
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Champion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Champion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Warrior> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Champion> <http://www.w3.org/2000/01/rdf-schema#comment> "Specialized warriors who used to be part of the elite forces of the time" .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Champion> <http://www.w3.org/2000/01/rdf-schema#label> "Champion" .
+# 
+# http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#CheapWeapon
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#CheapWeapon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#CheapWeapon> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid22 .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid22 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid25 .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid23 .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid24 .
+_:genid24 <http://www.w3.org/2002/07/owl#hasValue> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid24 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#expensive> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Weapon> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#CheapWeapon> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Weapon> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#CheapWeapon> <http://www.w3.org/2000/01/rdf-schema#comment> "Weapons that are relatively cheap" .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#CheapWeapon> <http://www.w3.org/2000/01/rdf-schema#label> "CheapWeapon" .
+# 
+# http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#ChristianFaction
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#ChristianFaction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#ChristianFaction> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid26 .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid26 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid29 .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid27 .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid28 .
+_:genid28 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Christianism> .
+_:genid28 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_religion> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Faction> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#ChristianFaction> <http://www.w3.org/2000/01/rdf-schema#comment> "Factions whose religion is Christianism" .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#ChristianFaction> <http://www.w3.org/2000/01/rdf-schema#label> "ChistianFaction" .
+# 
+# http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Christianism
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Christianism> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Christianism> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Religion> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Christianism> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Paganism> .
+# 
+# http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#City
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#City> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#City> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Location> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#City> <http://www.w3.org/2000/01/rdf-schema#comment> "Population center" .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#City> <http://www.w3.org/2000/01/rdf-schema#label> "City" .
+# 
+# http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Clergy
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Clergy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Clergy> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Vassal> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Clergy> <http://www.w3.org/2000/01/rdf-schema#comment> "Member of the clergy" .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Clergy> <http://www.w3.org/2000/01/rdf-schema#label> "Clergy" .
+# 
+# http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Event
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Event> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Event> <http://www.w3.org/2000/01/rdf-schema#comment> "An important event that happened in the series" .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Event> <http://www.w3.org/2000/01/rdf-schema#label> "Event" .
+# 
+# http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Faction
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Faction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Faction> <http://www.w3.org/2000/01/rdf-schema#comment> "One of the factions of the time in the British Isles." .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Faction> <http://www.w3.org/2000/01/rdf-schema#label> "Faction" .
+# 
+# http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Fortress
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Fortress> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Fortress> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#City> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Fortress> <http://www.w3.org/2000/01/rdf-schema#comment> "Fortified population center" .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Fortress> <http://www.w3.org/2000/01/rdf-schema#label> "Fortress" .
+# 
+# http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Irish
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Irish> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Irish> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Faction> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Irish> <http://www.w3.org/2000/01/rdf-schema#comment> "Christianized people of Ireland" .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Irish> <http://www.w3.org/2000/01/rdf-schema#label> "Irish" .
+# 
+# http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#King
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#King> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#King> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid30 .
+_:genid30 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Faction> .
+_:genid30 <http://www.w3.org/2002/07/owl#onProperty> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#king_of> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#King> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Witenagemot> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#King> <http://www.w3.org/2000/01/rdf-schema#comment> "The King or the Jarl of the faction" .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#King> <http://www.w3.org/2000/01/rdf-schema#label> "King" .
+# 
+# http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Location
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Location> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Location> <http://www.w3.org/2000/01/rdf-schema#comment> "Any type of location or territory" .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Location> <http://www.w3.org/2000/01/rdf-schema#label> "Location" .
+# 
+# http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#MeleeWeapon
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#MeleeWeapon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#MeleeWeapon> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Weapon> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#MeleeWeapon> <http://www.w3.org/2000/01/rdf-schema#comment> "Weapons used in melee or close combat" .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#MeleeWeapon> <http://www.w3.org/2000/01/rdf-schema#label> "MeleeWeapon" .
+# 
+# http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Merchant
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Merchant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Merchant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Vassal> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Merchant> <http://www.w3.org/2000/01/rdf-schema#comment> "A buyer and seller of commodities for profit" .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Merchant> <http://www.w3.org/2000/01/rdf-schema#label> "Merchant" .
+# 
+# http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Noble
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Noble> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Noble> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Person> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Noble> <http://www.w3.org/2002/07/owl#disjointWith> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Vassal> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Noble> <http://www.w3.org/2000/01/rdf-schema#label> "Aristocratic people" .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Noble> <http://www.w3.org/2000/01/rdf-schema#label> "Noble" .
+# 
+# http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#NorseGaels
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#NorseGaels> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#NorseGaels> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Faction> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#NorseGaels> <http://www.w3.org/2000/01/rdf-schema#comment> "Scandinavian population from Viking raids who settled in Ireland, Scotland, Wales" .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#NorseGaels> <http://www.w3.org/2000/01/rdf-schema#label> "NorseGaels" .
+# 
+# http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#OldEnoughToFight
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#OldEnoughToFight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#OldEnoughToFight> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Person> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#OldEnoughToFight> <http://www.w3.org/2000/01/rdf-schema#comment> "People that are too old to fight" .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#OldEnoughToFight> <http://www.w3.org/2000/01/rdf-schema#label> "OldEnoughToFight" .
+# 
+# http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#OneHanded
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#OneHanded> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#OneHanded> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#MeleeWeapon> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#OneHanded> <http://www.w3.org/2000/01/rdf-schema#comment> "Weapons that can be used with one hand" .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#OneHanded> <http://www.w3.org/2000/01/rdf-schema#label> "OneHanded" .
+# 
+# http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#PaganFaction
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#PaganFaction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#PaganFaction> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid31 .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid31 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid34 .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid32 .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid33 .
+_:genid33 <http://www.w3.org/2002/07/owl#complementOf> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#ChristianFaction> .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Faction> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#PaganFaction> <http://www.w3.org/2000/01/rdf-schema#comment> "Factions whose religion is not Christianism" .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#PaganFaction> <http://www.w3.org/2000/01/rdf-schema#label> "PaganFaction" .
+# 
+# http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Paganism
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Paganism> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Paganism> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Religion> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Paganism> <http://www.w3.org/2000/01/rdf-schema#comment> "Any non-Christian religion" .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Paganism> <http://www.w3.org/2000/01/rdf-schema#label> "Paganism" .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Paganism> <http://www.w3.org/2000/01/rdf-schema#sameAs> "https://dbpedia.org/page/Paganism" .
+# 
+# http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#PeaceTreaty
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#PeaceTreaty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#PeaceTreaty> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Event> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#PeaceTreaty> <http://www.w3.org/2000/01/rdf-schema#comment> "A peace treaty signed by 2 or more factions" .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#PeaceTreaty> <http://www.w3.org/2000/01/rdf-schema#label> "PeaceTreaty" .
+# 
+# http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Peasant
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Peasant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Peasant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Vassal> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Peasant> <http://www.w3.org/2000/01/rdf-schema#label> "Peasant" .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Peasant> <http://www.w3.org/2000/01/rdf-schema#label> "Persons tilling the soil as small landowners or as laborers" .
+# 
+# http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Person
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Person> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Person> <http://www.w3.org/2000/01/rdf-schema#comment> "Any kind of person" .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Person> <http://www.w3.org/2000/01/rdf-schema#label> "Person" .
+# 
+# http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Raid
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Raid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Raid> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Event> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Raid> <http://www.w3.org/2000/01/rdf-schema#comment> "A raid by one or more factions on a territory" .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Raid> <http://www.w3.org/2000/01/rdf-schema#label> "Raid" .
+# 
+# http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#RangeWeapon
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#RangeWeapon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#RangeWeapon> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Weapon> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#RangeWeapon> <http://www.w3.org/2000/01/rdf-schema#comment> "Ranged weapons" .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#RangeWeapon> <http://www.w3.org/2000/01/rdf-schema#label> "RangeWeapon" .
+# 
+# http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Religion
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Religion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Religion> <http://www.w3.org/2000/01/rdf-schema#comment> "Creed or belief" .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Religion> <http://www.w3.org/2000/01/rdf-schema#label> "Religion" .
+# 
+# http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Scots
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Scots> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Scots> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Faction> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Scots> <http://www.w3.org/2000/01/rdf-schema#comment> "Celtic and Pictish settlers from the northern British Isles" .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Scots> <http://www.w3.org/2000/01/rdf-schema#label> "Scots" .
+# 
+# http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Siege
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Siege> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Siege> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Battle> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Siege> <http://www.w3.org/2000/01/rdf-schema#comment> "A siege of a fortress that has occurred in the series" .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Siege> <http://www.w3.org/2000/01/rdf-schema#label> "Siege" .
+# 
+# http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#TooOldToFight
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#TooOldToFight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#TooOldToFight> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Person> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#TooOldToFight> <http://www.w3.org/2000/01/rdf-schema#comment> "People that aren't too old to fight" .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#TooOldToFight> <http://www.w3.org/2000/01/rdf-schema#label> "TooOldToFight" .
+# 
+# http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#TwoHanded
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#TwoHanded> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#TwoHanded> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#MeleeWeapon> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#TwoHanded> <http://www.w3.org/2000/01/rdf-schema#comment> "Weapons that must be used with two hands" .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#TwoHanded> <http://www.w3.org/2000/01/rdf-schema#label> "TwoHanded" .
+# 
+# http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Vassal
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Vassal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Vassal> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Person> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Vassal> <http://www.w3.org/2000/01/rdf-schema#comment> "A holder of land by feudal tenure on conditions of homage and allegiance." .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Vassal> <http://www.w3.org/2000/01/rdf-schema#label> "Vassal" .
+# 
+# http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Vikings
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Vikings> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Vikings> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Faction> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Vikings> <http://www.w3.org/2000/01/rdf-schema#comment> "Peoples from Scandinavia, always willing to raid for slaves, booty and land." .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Vikings> <http://www.w3.org/2000/01/rdf-schema#label> "Vikings" .
+# 
+# http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Warrior
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Warrior> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Warrior> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Vassal> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Warrior> <http://www.w3.org/2000/01/rdf-schema#comment> "People whose occupation is war or the defense of the territory" .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Warrior> <http://www.w3.org/2000/01/rdf-schema#label> "Warrior" .
+# 
+# http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Weapon
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Weapon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Weapon> <http://www.w3.org/2000/01/rdf-schema#comment> "Any kind of weapon" .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Weapon> <http://www.w3.org/2000/01/rdf-schema#label> "Weapon" .
+# 
+# http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Witenagemot
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Witenagemot> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Witenagemot> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Noble> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Witenagemot> <http://www.w3.org/2000/01/rdf-schema#comment> "Aristocratic people assembly members" .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Witenagemot> <http://www.w3.org/2000/01/rdf-schema#label> "Witenagemot" .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Witenagemot> <http://www.w3.org/2000/01/rdf-schema#sameAs> "https://dbpedia.org/page/Witenagemot" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Aeglesburgh
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Aeglesburgh> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Aeglesburgh> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Fortress> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Aeglesburgh> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#belongs_to> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Mercia> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Aeglesburgh> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#name> "Aeglesburgh" .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Aeglesburgh> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#population> "800"^^<http://www.w3.org/2001/XMLSchema#integer> .
+# 
+# http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Aethelflaed
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Aethelflaed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Aethelflaed> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Witenagemot> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Aethelflaed> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_ancestor> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Alfred> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Aethelflaed> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#member_of> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Mercia> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Aethelflaed> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#age> "30"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Aethelflaed> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#name> "Aethelflaed" .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Aethelflaed> <http://www.w3.org/2000/01/rdf-schema#sameAs> "https://dbpedia.org/page/%C3%86thelfl%C3%A6d" .
+# 
+# http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Aethelhelm
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Aethelhelm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Aethelhelm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Witenagemot> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Aethelhelm> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#member_of> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Wessex> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Aethelhelm> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#age> "60"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Aethelhelm> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#name> "Aethelhelm" .
+# 
+# http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Aethelred
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Aethelred> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Aethelred> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Witenagemot> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Aethelred> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#member_of> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Mercia> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Aethelred> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#age> "35"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Aethelred> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#name> "Aethelred" .
+# 
+# http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Alfred
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Alfred> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Alfred> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Witenagemot> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Alfred> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#member_of> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Wessex> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Alfred> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#age> "55"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Alfred> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#name> "Alfred" .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Alfred> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#nickname> "The Great" .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Alfred> <http://www.w3.org/2000/01/rdf-schema#sameAs> "https://dbpedia.org/page/Alfred_the_Great" .
+# 
+# http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Battle_Of_Ethandun
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Battle_Of_Ethandun> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Battle_Of_Ethandun> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Battle> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Battle_Of_Ethandun> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_participant> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Estanglia> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Battle_Of_Ethandun> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_participant> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Wessex> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Battle_Of_Ethandun> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#name> "Battle of Ethandum" .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Battle_Of_Ethandun> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#year> "878"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Battle_Of_Ethandun> <http://www.w3.org/2000/01/rdf-schema#sameAs> "https://dbpedia.org/page/Battle_of_Edington" .
+# 
+# http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Battle_Of_Tettenhall
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Battle_Of_Tettenhall> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Battle_Of_Tettenhall> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_participant> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Estanglia> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Battle_Of_Tettenhall> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_participant> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Mercia> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Battle_Of_Tettenhall> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#name> "Battle of Tettenhall" .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Battle_Of_Tettenhall> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#year> "871"^^<http://www.w3.org/2001/XMLSchema#integer> .
+# 
+# http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Beocca
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Beocca> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Beocca> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Clergy> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Beocca> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_weapon> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Club> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Beocca> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#member_of> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Wessex> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Beocca> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#age> "58"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Beocca> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#name> "Beocca" .
+# 
+# http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Bow
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Bow> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Bow> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#RangeWeapon> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Bow> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#expensive> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Bow> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#name> "Bow" .
+# 
+# http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Celtic_Mithology
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Celtic_Mithology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Celtic_Mithology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Paganism> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Celtic_Mithology> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#name> "Celtic Mithology" .
+# 
+# http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Christianism
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Christianism> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Christianism> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Christianism> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Christianism> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#name> "Chistianism" .
+# 
+# http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Club
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Club> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Club> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#OneHanded> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Club> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#expensive> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Club> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#name> "Club" .
+# 
+# http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Cornwall
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Cornwall> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Cornwall> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Britons> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Cornwall> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_religion> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Celtic_Mithology> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Cornwall> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#name> "Cornwall" .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Cornwall> <http://www.w3.org/2000/01/rdf-schema#sameAs> "https://dbpedia.org/page/Cornwall" .
+# 
+# http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Dagger
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Dagger> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Dagger> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#OneHanded> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Dagger> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#expensive> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Dagger> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#name> "Dagger" .
+# 
+# http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Deheubarth
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Deheubarth> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Deheubarth> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Britons> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Deheubarth> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_king> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Hywel> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Deheubarth> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_religion> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Christianism> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Deheubarth> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#name> "Deheubarth" .
+# 
+# http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Dinefwr
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Dinefwr> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Dinefwr> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Fortress> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Dinefwr> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#belongs_to> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Deheubarth> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Dinefwr> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#name> "Dinefwr" .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Dinefwr> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#population> "600"^^<http://www.w3.org/2001/XMLSchema#integer> .
+# 
+# http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Estanglia
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Estanglia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Estanglia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#AngloDanes> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Estanglia> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_king> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Guthrum> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Estanglia> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_religion> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Nordic_Mithology> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Estanglia> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#name> "Eastanglia" .
+# 
+# http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Guthrum
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Guthrum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Guthrum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Witenagemot> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Guthrum> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#member_of> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Estanglia> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Guthrum> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#age> "65"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Guthrum> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#name> "Guthrum" .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Guthrum> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#nickname> "The Old" .
+# 
+# http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Hywel
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Hywel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Hywel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Witenagemot> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Hywel> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#member_of> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Deheubarth> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Hywel> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#age> "70"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Hywel> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#name> "Hywel" .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Hywel> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#nickname> "The Good" .
+# 
+# http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Iseult
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Iseult> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Iseult> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Noble> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Iseult> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#member_of> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Cornwall> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Iseult> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#age> "30"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Iseult> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#name> "Iseult" .
+# 
+# http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Mercia
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Mercia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Mercia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#AngloSaxons> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Mercia> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_king> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Aethelred> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Mercia> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_religion> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Christianism> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Mercia> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#name> "Mercia" .
+# 
+# http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Nordic_Mithology
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Nordic_Mithology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Nordic_Mithology> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Paganism> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Nordic_Mithology> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#name> "Nordic Mithology" .
+# 
+# http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Ragnar
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Ragnar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Ragnar> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Witenagemot> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Ragnar> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#member_of> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Estanglia> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Ragnar> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#age> "35"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Ragnar> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#name> "Ragnar" .
+# 
+# http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Raid_Of_Cornwall
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Raid_Of_Cornwall> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Raid_Of_Cornwall> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Raid> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Raid_Of_Cornwall> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_lootedBy> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Wessex> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Raid_Of_Cornwall> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_victim> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Cornwall> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Raid_Of_Cornwall> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#name> "Raid of Cornwall" .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Raid_Of_Cornwall> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#year> "877"^^<http://www.w3.org/2001/XMLSchema#integer> .
+# 
+# http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Raid_Of_Mercia
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Raid_Of_Mercia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Raid_Of_Mercia> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Raid> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Raid_Of_Mercia> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_lootedBy> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Estanglia> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Raid_Of_Mercia> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_victim> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Mercia> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Raid_Of_Mercia> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#year> "871"^^<http://www.w3.org/2001/XMLSchema#integer> .
+# 
+# http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Siege_Of_Wintanceaster
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Siege_Of_Wintanceaster> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Siege_Of_Wintanceaster> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Siege> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Siege_Of_Wintanceaster> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_beenSieged> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Aeglesburgh> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Siege_Of_Wintanceaster> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_participant> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Estanglia> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Siege_Of_Wintanceaster> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_participant> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Wessex> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Siege_Of_Wintanceaster> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#name> "Siege of Wintanceaster" .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Siege_Of_Wintanceaster> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#year> "892"^^<http://www.w3.org/2001/XMLSchema#integer> .
+# 
+# http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Spear
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Spear> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Spear> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#TwoHanded> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Spear> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#expensive> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Spear> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#name> "Spear" .
+# 
+# http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Sword
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Sword> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Sword> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#OneHanded> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Sword> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#expensive> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Sword> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#name> "Sword" .
+# 
+# http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Treaty_of_Alfred_and_Guthrum
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Treaty_of_Alfred_and_Guthrum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Treaty_of_Alfred_and_Guthrum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#PeaceTreaty> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Treaty_of_Alfred_and_Guthrum> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_signatory> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Estanglia> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Treaty_of_Alfred_and_Guthrum> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_signatory> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Wessex> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Treaty_of_Alfred_and_Guthrum> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#name> "Treaty of Alfred and Guthrum" .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Treaty_of_Alfred_and_Guthrum> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#year> "879"^^<http://www.w3.org/2001/XMLSchema#integer> .
+# 
+# http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Uhtred_of_Bebbanburg
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Uhtred_of_Bebbanburg> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Uhtred_of_Bebbanburg> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Champion> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Uhtred_of_Bebbanburg> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_preferedWeapon> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Sword> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Uhtred_of_Bebbanburg> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#member_of> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Wessex> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Uhtred_of_Bebbanburg> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#age> "35"^^<http://www.w3.org/2001/XMLSchema#integer> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Uhtred_of_Bebbanburg> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#name> "Uthred of Bebbanburg" .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Uhtred_of_Bebbanburg> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#nickname> "Killer of danes" .
+# 
+# http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Wessex
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Wessex> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Wessex> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#AngloSaxons> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Wessex> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_king> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Alfred> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Wessex> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_religion> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Christianism> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Wessex> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#name> "Wessex" .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Wessex> <http://www.w3.org/2000/01/rdf-schema#sameAs> "https://dbpedia.org/page/Wessex" .
+# 
+# http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Wintanceaster
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Wintanceaster> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Wintanceaster> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Fortress> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Wintanceaster> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#belongs_to> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Wessex> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Wintanceaster> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#name> "Wintanceaster" .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Wintanceaster> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#population> "1500"^^<http://www.w3.org/2001/XMLSchema#integer> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Annotations
+# #
+# #################################################################
+# 
+# 
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Christianism> <http://www.w3.org/2000/01/rdf-schema#comment> "Creed or belief based on the person and teachings of Jesus Chris" .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Christianism> <http://www.w3.org/2000/01/rdf-schema#label> "Christianism" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    General axioms
+# #
+# #################################################################
+# 
+# 
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid35 <http://www.w3.org/2002/07/owl#members> _:genid38 .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid37 .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid36 .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Raid> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#PeaceTreaty> .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Battle> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Rules
+# #
+# #################################################################
+# 
+# 
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/p> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/a> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#p> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#b> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#q> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+_:genid39 <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid39 <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+_:genid39 <http://www.w3.org/2000/01/rdf-schema#label> "TooOldToFight" .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid39 <http://www.w3.org/2003/11/swrl#body> _:genid46 .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid44 .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid40 .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid41 .
+_:genid41 <http://www.w3.org/2003/11/swrl#arguments> _:genid43 .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid42 .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "55"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/eduardo/ontologies/2022/3/a> .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid41 <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#greaterThan> .
+<http://www.w3.org/2003/11/swrlb#greaterThan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Builtin> .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#BuiltinAtom> .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid45 .
+_:genid45 <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/eduardo/ontologies/2022/3/a> .
+_:genid45 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/eduardo/ontologies/2022/3/p> .
+_:genid45 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#age> .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid47 .
+_:genid47 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/eduardo/ontologies/2022/3/p> .
+_:genid47 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Person> .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid39 <http://www.w3.org/2003/11/swrl#head> _:genid48 .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid49 .
+_:genid49 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/eduardo/ontologies/2022/3/p> .
+_:genid49 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#TooOldToFight> .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid50 <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid50 <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+_:genid50 <http://www.w3.org/2000/01/rdf-schema#label> "OldEnoughToFight" .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid50 <http://www.w3.org/2003/11/swrl#body> _:genid57 .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid55 .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid51 .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid52 .
+_:genid52 <http://www.w3.org/2003/11/swrl#arguments> _:genid54 .
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid53 .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "55"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/eduardo/ontologies/2022/3/a> .
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid52 <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#lessThanOrEqual> .
+<http://www.w3.org/2003/11/swrlb#lessThanOrEqual> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Builtin> .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#BuiltinAtom> .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid56 .
+_:genid56 <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/eduardo/ontologies/2022/3/a> .
+_:genid56 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/eduardo/ontologies/2022/3/p> .
+_:genid56 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#age> .
+_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid58 .
+_:genid58 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/eduardo/ontologies/2022/3/p> .
+_:genid58 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Person> .
+_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid50 <http://www.w3.org/2003/11/swrl#head> _:genid59 .
+_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid60 .
+_:genid60 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/eduardo/ontologies/2022/3/p> .
+_:genid60 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#OldEnoughToFight> .
+_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid61 <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid61 <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+_:genid61 <http://www.w3.org/2000/01/rdf-schema#label> "ContendersAndAllies" .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid61 <http://www.w3.org/2003/11/swrl#body> _:genid70 .
+_:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid68 .
+_:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid66 .
+_:genid66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid64 .
+_:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid62 .
+_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid63 .
+_:genid63 <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#q> .
+_:genid63 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#p> .
+_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DifferentIndividualsAtom> .
+_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid65 .
+_:genid65 <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#q> .
+_:genid65 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#b> .
+_:genid65 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_participant> .
+_:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid67 .
+_:genid67 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#b> .
+_:genid67 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Battle> .
+_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid69 .
+_:genid69 <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#b> .
+_:genid69 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#p> .
+_:genid69 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#participant_of> .
+_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid71 .
+_:genid71 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#p> .
+_:genid71 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Faction> .
+_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid61 <http://www.w3.org/2003/11/swrl#head> _:genid72 .
+_:genid72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid73 .
+_:genid73 <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#q> .
+_:genid73 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#p> .
+_:genid73 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_foughtWith> .
+_:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

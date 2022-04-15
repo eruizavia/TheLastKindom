@@ -1,0 +1,1939 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Noble"
+    }, {
+      "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Warrior"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid14",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "_:genid18"
+    }, {
+      "@id" : "_:genid16"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid16",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#looter_of"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Raid"
+  } ]
+}, {
+  "@id" : "_:genid18",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Faction"
+    }, {
+      "@id" : "_:genid20"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid20",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#participant_of"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Battle"
+  } ]
+}, {
+  "@id" : "_:genid22",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Weapon"
+    }, {
+      "@id" : "_:genid24"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid24",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#hasValue" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "false"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#expensive"
+  } ]
+}, {
+  "@id" : "_:genid26",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Faction"
+    }, {
+      "@id" : "_:genid28"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid28",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_religion"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Christianism"
+  } ]
+}, {
+  "@id" : "_:genid30",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#king_of"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Faction"
+  } ]
+}, {
+  "@id" : "_:genid31",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Faction"
+    }, {
+      "@id" : "_:genid33"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid33",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#complementOf" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#ChristianFaction"
+  } ]
+}, {
+  "@id" : "_:genid35",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AllDisjointClasses" ],
+  "http://www.w3.org/2002/07/owl#members" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Battle"
+    }, {
+      "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#PeaceTreaty"
+    }, {
+      "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Raid"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid39",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
+  "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "TooOldToFight"
+  } ],
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@list" : [ {
+      "@id" : "_:genid47"
+    }, {
+      "@id" : "_:genid45"
+    }, {
+      "@id" : "_:genid41"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@list" : [ {
+      "@id" : "_:genid49"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Noble"
+    }, {
+      "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Warrior"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid41",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#BuiltinAtom" ],
+  "http://www.w3.org/2003/11/swrl#arguments" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/a"
+    }, {
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+      "@value" : "55"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#builtin" : [ {
+    "@id" : "http://www.w3.org/2003/11/swrlb#greaterThan"
+  } ]
+}, {
+  "@id" : "_:genid45",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/p"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/a"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#age"
+  } ]
+}, {
+  "@id" : "_:genid47",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/p"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Person"
+  } ]
+}, {
+  "@id" : "_:genid49",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/p"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#TooOldToFight"
+  } ]
+}, {
+  "@id" : "_:genid50",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
+  "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "OldEnoughToFight"
+  } ],
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@list" : [ {
+      "@id" : "_:genid58"
+    }, {
+      "@id" : "_:genid56"
+    }, {
+      "@id" : "_:genid52"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@list" : [ {
+      "@id" : "_:genid60"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid52",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#BuiltinAtom" ],
+  "http://www.w3.org/2003/11/swrl#arguments" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/a"
+    }, {
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+      "@value" : "55"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#builtin" : [ {
+    "@id" : "http://www.w3.org/2003/11/swrlb#lessThanOrEqual"
+  } ]
+}, {
+  "@id" : "_:genid56",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/p"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/a"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#age"
+  } ]
+}, {
+  "@id" : "_:genid58",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/p"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Person"
+  } ]
+}, {
+  "@id" : "_:genid60",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/p"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#OldEnoughToFight"
+  } ]
+}, {
+  "@id" : "_:genid61",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
+  "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : ""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ContendersAndAllies"
+  } ],
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@list" : [ {
+      "@id" : "_:genid71"
+    }, {
+      "@id" : "_:genid69"
+    }, {
+      "@id" : "_:genid67"
+    }, {
+      "@id" : "_:genid65"
+    }, {
+      "@id" : "_:genid63"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@list" : [ {
+      "@id" : "_:genid73"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid63",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#DifferentIndividualsAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#p"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#q"
+  } ]
+}, {
+  "@id" : "_:genid65",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#b"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#q"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_participant"
+  } ]
+}, {
+  "@id" : "_:genid67",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#b"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Battle"
+  } ]
+}, {
+  "@id" : "_:genid69",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#p"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#b"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#participant_of"
+  } ]
+}, {
+  "@id" : "_:genid7",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#unionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Event"
+    }, {
+      "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Faction"
+    }, {
+      "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Location"
+    }, {
+      "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Person"
+    }, {
+      "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Religion"
+    }, {
+      "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Weapon"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid71",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#ClassAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#p"
+  } ],
+  "http://www.w3.org/2003/11/swrl#classPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Faction"
+  } ]
+}, {
+  "@id" : "_:genid73",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#p"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#q"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_foughtWith"
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/terms/license",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/a",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
+}, {
+  "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/p",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
+}, {
+  "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@value" : "http://purl.org/NET/rdflicense/cc-by4.0"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Ontology about the TV Show \"The Last Kingdom\" created by Eduardo Ruiz Avia"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Aeglesburgh",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#belongs_to" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Mercia"
+  } ],
+  "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#name" : [ {
+    "@value" : "Aeglesburgh"
+  } ],
+  "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#population" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "800"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Fortress"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Aethelflaed",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#age" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "30"
+  } ],
+  "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_ancestor" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Alfred"
+  } ],
+  "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#member_of" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Mercia"
+  } ],
+  "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#name" : [ {
+    "@value" : "Aethelflaed"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Witenagemot"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#sameAs" : [ {
+    "@value" : "https://dbpedia.org/page/%C3%86thelfl%C3%A6d"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Aethelhelm",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#age" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "60"
+  } ],
+  "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#member_of" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Wessex"
+  } ],
+  "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#name" : [ {
+    "@value" : "Aethelhelm"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Witenagemot"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Aethelred",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#age" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "35"
+  } ],
+  "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#member_of" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Mercia"
+  } ],
+  "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#name" : [ {
+    "@value" : "Aethelred"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Witenagemot"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Alfred",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#age" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "55"
+  } ],
+  "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#member_of" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Wessex"
+  } ],
+  "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#name" : [ {
+    "@value" : "Alfred"
+  } ],
+  "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#nickname" : [ {
+    "@value" : "The Great"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Witenagemot"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#sameAs" : [ {
+    "@value" : "https://dbpedia.org/page/Alfred_the_Great"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#AngloDanes",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Danish factions settled in England"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "AngloDanes"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Faction"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#AngloSaxons",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Saxon factions settled in England"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "AngloSaxons"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#sameAs" : [ {
+    "@value" : "https://dbpedia.org/page/Anglo-Saxons"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Faction"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Battle",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A battle that has occurred in the series"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Battle"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Event"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Battle_Of_Ethandun",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_participant" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Estanglia"
+  }, {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Wessex"
+  } ],
+  "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#name" : [ {
+    "@value" : "Battle of Ethandum"
+  } ],
+  "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#year" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "878"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Battle"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#sameAs" : [ {
+    "@value" : "https://dbpedia.org/page/Battle_of_Edington"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Battle_Of_Tettenhall",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_participant" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Estanglia"
+  }, {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Mercia"
+  } ],
+  "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#name" : [ {
+    "@value" : "Battle of Tettenhall"
+  } ],
+  "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#year" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "871"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Belligerent",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Factions that took part in any battle or raid"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Belligerent"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Faction"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid14"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Beocca",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#age" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "58"
+  } ],
+  "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_weapon" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Club"
+  } ],
+  "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#member_of" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Wessex"
+  } ],
+  "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#name" : [ {
+    "@value" : "Beocca"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Clergy"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Bow",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#expensive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "false"
+  } ],
+  "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#name" : [ {
+    "@value" : "Bow"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#RangeWeapon"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Britons",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The Welsh are the descendants of the ancient Britons, pushed west and north of the island by the Saxons in the 5th and 7th centuries."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Britons"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Faction"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Celtic_Mithology",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#name" : [ {
+    "@value" : "Celtic Mithology"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Paganism"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Champion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Specialized warriors who used to be part of the elite forces of the time"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Champion"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Warrior"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#CheapWeapon",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Weapons that are relatively cheap"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "CheapWeapon"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Weapon"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid22"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#ChristianFaction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Factions whose religion is Christianism"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ChistianFaction"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid26"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Christianism",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class", "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#name" : [ {
+    "@value" : "Chistianism"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Christianism"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Creed or belief based on the person and teachings of Jesus Chris"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Christianism"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Religion"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Paganism"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#City",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Population center"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "City"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Location"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Clergy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Member of the clergy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Clergy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Vassal"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Club",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#expensive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "false"
+  } ],
+  "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#name" : [ {
+    "@value" : "Club"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#OneHanded"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Cornwall",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_religion" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Celtic_Mithology"
+  } ],
+  "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#name" : [ {
+    "@value" : "Cornwall"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Britons"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#sameAs" : [ {
+    "@value" : "https://dbpedia.org/page/Cornwall"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Dagger",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#expensive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "false"
+  } ],
+  "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#name" : [ {
+    "@value" : "Dagger"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#OneHanded"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Deheubarth",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_king" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Hywel"
+  } ],
+  "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_religion" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Christianism"
+  } ],
+  "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#name" : [ {
+    "@value" : "Deheubarth"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Britons"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Dinefwr",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#belongs_to" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Deheubarth"
+  } ],
+  "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#name" : [ {
+    "@value" : "Dinefwr"
+  } ],
+  "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#population" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "600"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Fortress"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Estanglia",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_king" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Guthrum"
+  } ],
+  "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_religion" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Nordic_Mithology"
+  } ],
+  "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#name" : [ {
+    "@value" : "Eastanglia"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#AngloDanes"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Event",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "An important event that happened in the series"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Event"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Faction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "One of the factions of the time in the British Isles."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Faction"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Fortress",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Fortified population center"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Fortress"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#City"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Guthrum",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#age" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "65"
+  } ],
+  "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#member_of" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Estanglia"
+  } ],
+  "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#name" : [ {
+    "@value" : "Guthrum"
+  } ],
+  "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#nickname" : [ {
+    "@value" : "The Old"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Witenagemot"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Hywel",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#age" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "70"
+  } ],
+  "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#member_of" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Deheubarth"
+  } ],
+  "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#name" : [ {
+    "@value" : "Hywel"
+  } ],
+  "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#nickname" : [ {
+    "@value" : "The Good"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Witenagemot"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Irish",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Christianized people of Ireland"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Irish"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Faction"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Iseult",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#age" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "30"
+  } ],
+  "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#member_of" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Cornwall"
+  } ],
+  "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#name" : [ {
+    "@value" : "Iseult"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Noble"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#King",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The King or the Jarl of the faction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "King"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Witenagemot"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid30"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Location",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Any type of location or territory"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Location"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#MeleeWeapon",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Weapons used in melee or close combat"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "MeleeWeapon"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Weapon"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Merchant",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A buyer and seller of commodities for profit"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Merchant"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Vassal"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Mercia",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_king" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Aethelred"
+  } ],
+  "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_religion" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Christianism"
+  } ],
+  "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#name" : [ {
+    "@value" : "Mercia"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#AngloSaxons"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Noble",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Aristocratic people"
+  }, {
+    "@value" : "Noble"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Person"
+  } ],
+  "http://www.w3.org/2002/07/owl#disjointWith" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Vassal"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Nordic_Mithology",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#name" : [ {
+    "@value" : "Nordic Mithology"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Paganism"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#NorseGaels",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Scandinavian population from Viking raids who settled in Ireland, Scotland, Wales"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "NorseGaels"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Faction"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#OldEnoughToFight",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "People that are too old to fight"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "OldEnoughToFight"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Person"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#OneHanded",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Weapons that can be used with one hand"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "OneHanded"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#MeleeWeapon"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#PaganFaction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Factions whose religion is not Christianism"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "PaganFaction"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid31"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Paganism",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Any non-Christian religion"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Paganism"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#sameAs" : [ {
+    "@value" : "https://dbpedia.org/page/Paganism"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Religion"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#PeaceTreaty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A peace treaty signed by 2 or more factions"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "PeaceTreaty"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Event"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Peasant",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Peasant"
+  }, {
+    "@value" : "Persons tilling the soil as small landowners or as laborers"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Vassal"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Person",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Any kind of person"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Person"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Ragnar",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#age" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "35"
+  } ],
+  "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#member_of" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Estanglia"
+  } ],
+  "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#name" : [ {
+    "@value" : "Ragnar"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Witenagemot"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Raid",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A raid by one or more factions on a territory"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Raid"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Event"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Raid_Of_Cornwall",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_lootedBy" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Wessex"
+  } ],
+  "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_victim" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Cornwall"
+  } ],
+  "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#name" : [ {
+    "@value" : "Raid of Cornwall"
+  } ],
+  "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#year" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "877"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Raid"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Raid_Of_Mercia",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_lootedBy" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Estanglia"
+  } ],
+  "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_victim" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Mercia"
+  } ],
+  "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#year" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "871"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Raid"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#RangeWeapon",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Ranged weapons"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "RangeWeapon"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Weapon"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Religion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Creed or belief"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Religion"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Scots",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Celtic and Pictish settlers from the northern British Isles"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Scots"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Faction"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Siege",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A siege of a fortress that has occurred in the series"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Siege"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Battle"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Siege_Of_Wintanceaster",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_beenSieged" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Aeglesburgh"
+  } ],
+  "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_participant" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Estanglia"
+  }, {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Wessex"
+  } ],
+  "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#name" : [ {
+    "@value" : "Siege of Wintanceaster"
+  } ],
+  "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#year" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "892"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Siege"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Spear",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#expensive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "false"
+  } ],
+  "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#name" : [ {
+    "@value" : "Spear"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#TwoHanded"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Sword",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#expensive" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "@value" : "true"
+  } ],
+  "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#name" : [ {
+    "@value" : "Sword"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#OneHanded"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#TooOldToFight",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "People that aren't too old to fight"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "TooOldToFight"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Person"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Treaty_of_Alfred_and_Guthrum",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_signatory" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Estanglia"
+  }, {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Wessex"
+  } ],
+  "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#name" : [ {
+    "@value" : "Treaty of Alfred and Guthrum"
+  } ],
+  "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#year" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "879"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#PeaceTreaty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#TwoHanded",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Weapons that must be used with two hands"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "TwoHanded"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#MeleeWeapon"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Uhtred_of_Bebbanburg",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#age" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "35"
+  } ],
+  "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_preferedWeapon" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Sword"
+  } ],
+  "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#member_of" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Wessex"
+  } ],
+  "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#name" : [ {
+    "@value" : "Uthred of Bebbanburg"
+  } ],
+  "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#nickname" : [ {
+    "@value" : "Killer of danes"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Champion"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Vassal",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "A holder of land by feudal tenure on conditions of homage and allegiance."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Vassal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Person"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Vikings",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Peoples from Scandinavia, always willing to raid for slaves, booty and land."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Vikings"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Faction"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Warrior",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "People whose occupation is war or the defense of the territory"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Warrior"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Vassal"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Weapon",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Any kind of weapon"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Weapon"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Wessex",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_king" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Alfred"
+  } ],
+  "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_religion" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Christianism"
+  } ],
+  "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#name" : [ {
+    "@value" : "Wessex"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#AngloSaxons"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#sameAs" : [ {
+    "@value" : "https://dbpedia.org/page/Wessex"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Wintanceaster",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ],
+  "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#belongs_to" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Wessex"
+  } ],
+  "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#name" : [ {
+    "@value" : "Wintanceaster"
+  } ],
+  "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#population" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#integer",
+    "@value" : "1500"
+  } ],
+  "http://www.w3.org/1999/02/22-rdf-syntax-ns#type" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Fortress"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Witenagemot",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Aristocratic people assembly members"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Witenagemot"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#sameAs" : [ {
+    "@value" : "https://dbpedia.org/page/Witenagemot"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Noble"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#age",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The age of someone"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Person"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "age"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#positiveInteger"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#ancestor_of",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Person whose instance is ancestor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Person"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "ancestor_of"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Person"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_ancestor"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#b",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
+}, {
+  "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#belongs_to",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Location"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Faction owner of the location"
+  }, {
+    "@value" : "belongs_to"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Faction"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_owner"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#expensive",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "States the relative value of the weapon"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Weapon"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "expensive"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#boolean"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_ancestor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Person who is ancestor of the instance"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Person"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has_ancestor"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Person"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_beenSieged",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Fortress that has been sieged"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Siege"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has_beenSieged"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Fortress"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#sieged_in"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_foughtWith",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#SymmetricProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Factions that fought for or againts the actual faction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Faction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has_foughtWith"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Faction"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_frontier",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#SymmetricProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Factions that border the current"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Faction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has_frontier"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Faction"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_king",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "KIng that rules the faction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Faction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has_king"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#King"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#king_of"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_lootedBy",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Faction that was looter in the raid"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Raid"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has_lootedBy"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Faction"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#looter_of"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_member",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "People who are members of the faction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Faction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has_member"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Person"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#member_of"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_owner",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Faction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Location owned by the faction"
+  }, {
+    "@value" : "has_owner"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Location"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_participant",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Battle"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Faction that participated in the battle"
+  }, {
+    "@value" : "has_participant"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Faction"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#participant_of"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_preferedWeapon",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Weapon prefered by nobles"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid1"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has_preferedWeapon"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Weapon"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#preferedWeapon_of"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_religion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Religion of the faction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Faction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has_religion"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Religion"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#religion_of"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_signatory",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Faction that signed the peace treaty"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#PeaceTreaty"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has_signatory"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Faction"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#signatory_of"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_victim",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Faction that was looted in the raid"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Raid"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has_victim"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Faction"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#victim_of"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#has_weapon",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Weapon used by vassals (the cheap ones)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Vassal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "has_weapon"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#CheapWeapon"
+  } ],
+  "http://www.w3.org/2002/07/owl#inverseOf" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#weapon_of"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#king_of",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Faction ruled by the king"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#King"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "king_of"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Faction"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#looter_of",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Raid that was carried out by the faction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Faction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "looter_of"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Raid"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#member_of",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Faction the person is a member of"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Person"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "member_of"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Faction"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#name",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Name of something or someone"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid7"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "name"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#nickname",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "The nickname of someone"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Person"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "nickname"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#p",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
+}, {
+  "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#participant_of",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Faction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Battle in which the faction participated"
+  }, {
+    "@value" : "participant_of"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Battle"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#population",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Approximate population of a place"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Location"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "population"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#positiveInteger"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#preferedWeapon_of",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Person whose instance is a prefered weapon"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Weapon"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "preferedWeapon_of"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "_:genid4"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#q",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
+}, {
+  "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#religion_of",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Faction that believes in this religion"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Religion"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "religion_of"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Faction"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#sieged_in",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Siege in wich the fortress was attacked"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Fortress"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "sieged_in"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Siege"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#signatory_of",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Peace treaty that was signed by the faction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Faction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "signatory_of"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#PeaceTreaty"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#victim_of",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Raid in which the faction was looted."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Faction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "victim_of"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Raid"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#weapon_of",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Person whose weapon is used"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#CheapWeapon"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "weapon_of"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Vassal"
+  } ]
+}, {
+  "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#year",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty", "http://www.w3.org/2002/07/owl#FunctionalProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "Year of the event"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.semanticweb.org/eduardo/ontologies/2022/3/thelastkingdom#Event"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "year"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#positiveInteger"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2000/01/rdf-schema#sameAs",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2002/07/owl#differentFrom",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2003/11/swrlb#greaterThan",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Builtin" ]
+}, {
+  "@id" : "http://www.w3.org/2003/11/swrlb#lessThanOrEqual",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Builtin" ]
+} ]
